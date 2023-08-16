@@ -16,5 +16,7 @@ análisis detallado de las ventas y el rendimiento de la tienda, utilizando visu
 
 - Eliminación datos innecesarios de las tablas `customer` y `order` para mejorar el rendimiento y la privacidad de los datos.
 - Creación de la tabla `calendar`, esto permite la relación de la columna fecha de la tabla `order` con la tabla `calendar` y poder manejar de forma más sencilla la manipulación de datos. 
-Se consigue la tabla `calendar` con la siguiente fórmula: calendar = CALENDAR(MIN('order'[order_date]), MAX('order'[order_date]))
+Se consigue la tabla `calendar` con la siguiente fórmula: calendar = `CALENDAR(MIN('order'[order_date]), MAX('order'[order_date]))`
+- Visualizacion de la fecha de actualizacion del reporte, al estar conectado a una base de datos se debe mostrar la fecha de actualización de los datos. 
+Para esto se crea una tabla `Last Refresh Data` para saber más de esto puede consultar este link: https://learn.microsoft.com/en-us/azure/devops/report/powerbi/add-last-refresh-time?view=azure-devops&tabs=private
 
