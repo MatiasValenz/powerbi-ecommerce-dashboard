@@ -1,4 +1,4 @@
-- nota: me encuentro subiendo la documentación del proyecto.
+- nota: Este es de mis primeros proyectos en Power BI, por lo que no es perfecto, pero me sirvió para aprender mucho sobre el uso de Power BI y la creación de visualizaciones. Cualquier comentario es más que bienvenido.
 # Análisis de Tienda en Línea - Proyecto Power BI
 
 Este proyecto utiliza Power BI para analizar una pequeña base de datos de una tienda en línea. El objetivo del proyecto es realizar un 
