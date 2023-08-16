@@ -9,5 +9,12 @@ análisis detallado de las ventas y el rendimiento de la tienda, utilizando visu
 
 ### Conexión a la Base de Datos
 
-1.  Utilicé la función de conexión de Power BI para establecer conexión con la base de datos PostgreSQL.
+1. Utilicé la función de conexión de Power BI para establecer conexión con la base de datos PostgreSQL.
 2. Seleccioné las tablas relevantes (`country`, `customer`, `order`, etc.) para el análisis.
+
+### Transformación de Datos
+
+- Eliminación datos innecesarios de las tablas `customer` y `order` para mejorar el rendimiento y la privacidad de los datos.
+- Creación de la tabla `calendar`, esto permite la relación de la columna fecha de la tabla `order` con la tabla `calendar` y poder manejar de forma más sencilla la manipulación de datos. 
+Se consigue la tabla `calendar` con la siguiente fórmula: calendar = CALENDAR(MIN('order'[order_date]), MAX('order'[order_date]))
+
