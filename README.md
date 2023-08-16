@@ -11,6 +11,8 @@ análisis detallado de las ventas y el rendimiento de la tienda, utilizando visu
 
 1. Utilicé la función de conexión de Power BI para establecer conexión con la base de datos PostgreSQL.
 2. Seleccioné las tablas relevantes (`country`, `customer`, `order`, etc.) para el análisis.
+Base de datos de muestra utilizada
+![diagram data base.png](images%2Fdiagram%20data%20base.png)
 
 ### Transformación de Datos
 
@@ -22,3 +24,10 @@ Para esto se crea una tabla `Last Refresh Data` para saber más de esto puede co
 
 Resultado del modelo
 ![modelo-powerbi.PNG](images%2Fmodelo-powerbi.PNG)
+
+### Creación de Visualizaciones
+
+- Creación de segmento de meses y años(utilizando la tabla `calendar`) para filtrar los datos.
+- Gráficos de torta para mostrar los tipos de órdenes (online, presencial, móvil).
+- Implementación un gráfico lineal que muestra las ventas por mes y año para identificar tendencias.
+- Creación una tabla resumen por país para analizar los indicadores de ventas.
